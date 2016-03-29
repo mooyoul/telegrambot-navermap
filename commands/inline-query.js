@@ -58,7 +58,7 @@ module.exports = exports = (bot) => {
         });
 
       bot.answerInlineQuery(msg.id, inlineQueryResults, {
-        cache_time: 0
+        cache_time: 86400
       });
     }).catch((e) => {
       log(e.stack);
