@@ -1,0 +1,38 @@
+{
+  "name": "telegrambot-navermap",
+  "version": "1.0.0",
+  "description": "Naver Map for Telegram using Telegram Bot API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mooyoul@bitbucket.org/mooyoul/telegrambot-navermap.git"
+  },
+  "keywords": [
+    "telegram",
+    "naver",
+    "nhn",
+    "map",
+    "bot",
+    "telegram-bot"
+  ],
+  "author": "MooYeol Prescott Lee <mooyoul@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/mooyoul/telegrambot-navermap#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "debug": "^2.2.0",
+    "dotenv": "^2.0.0",
+    "mongoose": "^4.4.10",
+    "mongoose-auto-increment": "^5.0.1",
+    "mongoose-deep-populate": "^3.0.0",
+    "mongoose-timestamp": "^0.5.0",
+    "node-telegram-bot-api": "^0.21.1",
+    "request": "^2.69.0",
+    "require-dir": "^0.3.0",
+    "sanitize-html": "^1.11.4",
+    "underscore": "^1.8.3"
+  }
+}
