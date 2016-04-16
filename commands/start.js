@@ -41,7 +41,14 @@ const
 module.exports = exports = (bot) => {
   bot.onText(/\/start/, (message) => {
     findOrCreateUser(message.from).then(() => {
-      bot.sendMessage(message.from.id, '안녕하세요! 네이버 지도 봇은 인라인 봇으로, 원하시는 채팅방에서 `@NaverMapBot 검색어`를 입력하시면 사용하실 수 있습니다.', {
+      bot.sendMessage(message.from.id, [
+        '안녕하세요! 네이버 지도 봇은 인라인 봇으로, 원하시는 채팅방에서 `@NaverMapBot 검색어`를 입력하시면 사용하실 수 있습니다.',
+        '',
+        '*본 텔레그램 봇은 네이버에서 공식 서비스하는 봇이 아닙니다!*',
+        '개발자 Telegram: @mooyoul',
+        '개발자가 만든 좋은 변호사 찾는 로톡: https://www.lawtalk.co.kr/tg2',
+        'RSS봇 Github: https://github.com/mooyoul/telegrambot-navermap'
+      ].join('\n'), {
         parse_type: 'Markdown'
       });
     }).catch((e) => {
