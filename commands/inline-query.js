@@ -45,7 +45,9 @@ module.exports = exports = (bot) => {
                 place.description,
                 '\n',
                 place.link && `<a href="${place.link}">상세정보 바로가기</a>`,
-                place.appLink && `<a href="${place.appLink}">네이버 지도 앱에서 열기</a>`
+                place.appLink && `<a href="${place.appLink}">네이버 지도 앱에서 열기</a>`,
+                '\n',
+                '<a href="https://www.lawtalk.co.kr/tg2">[광고] 개발자가 만든 좋은 변호사 찾는 로톡 바로가기</a>'
               ]).compact()
               .value()
               .join('\n'),
